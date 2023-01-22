@@ -1,0 +1,8 @@
+apiVersion: getambassador.io/v3alpha1
+kind: Host
+metadata:
+  name: platform-host
+spec:
+  hostname: platform.acme.com
+  acmeProvider:
+    email: yasser.moukhtar@outlook.com

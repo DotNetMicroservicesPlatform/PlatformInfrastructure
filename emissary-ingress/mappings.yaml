@@ -1,0 +1,17 @@
+apiVersion: getambassador.io/v3alpha1
+kind:  Mapping
+metadata:
+  name:  platform-mapping
+spec:
+  hostname: platform.acme.com
+  prefix: /platform-svc/
+  service: platform-cluster-ip-service.platform
+---
+apiVersion: getambassador.io/v3alpha1
+kind:  Mapping
+metadata:
+  name:  command-mapping
+spec:
+  hostname: platform.acme.com
+  prefix: /command-svc/
+  service: command-cluster-ip-service.platform
